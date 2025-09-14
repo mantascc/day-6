@@ -18,7 +18,7 @@
   <h1 class="title"><span id="typed-text"></span></h1>
   <!-- Title fixed: single element -->
   <div id="stage"><canvas id="c"></canvas></div>
-  <button id="resetBtn">Switch orbits</button>
+  <button id="resetBtn">Reset</button>
 
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script>
@@ -31,15 +31,15 @@
   const ORBITER_SIZE = 2;
   const ORBITERS_DEFAULT = 3;
   const SPEED_MIN = 0.003;
-  const SPEED_MAX = 0.04;
+  const SPEED_MAX = 0.06;
   const RX_MIN_RATIO = 0.18, RX_MAX_RATIO = 0.45;
   const RY_MIN_RATIO = 0.12, RY_MAX_RATIO = 0.45;
   const REVERSE_CHANCE = 0.5;
 
   const GRID_LINE_COLOR  = 'rgba(230,230,230,0.10)';
   const STAR_COLOR       = '#ffffff';
-  const ORBITER_COLOR    = '#ffffff';
-  const ORBIT_LINE_COLOR = 'rgba(255,255,255,0.12)';
+  const ORBITER_COLOR    = '#dadada';
+  const ORBIT_LINE_COLOR = 'rgba(255,255,255,0.1)';
   const ORBIT_LINE_WIDTH = 1;
 
   const canvas = document.getElementById('c');
